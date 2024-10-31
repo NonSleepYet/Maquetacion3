@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c7e6e2;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007965;
+}
+
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+}
