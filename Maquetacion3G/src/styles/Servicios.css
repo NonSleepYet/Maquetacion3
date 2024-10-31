@@ -1,0 +1,24 @@
+
+.servicios-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .servicio {
+    flex: 1; 
+    height: 500px;
+    margin: 0 10px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 5px; 
+  }
+  
+  .servicio h2 {
+    margin: 0; 
+  }
+  
