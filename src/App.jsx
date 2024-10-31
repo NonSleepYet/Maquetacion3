@@ -17,7 +17,7 @@ function App() {
       <Router>
         {loggedIn && <Navbar />}
         <Routes>
-          {/* Redireccionar al login si no está autenticado */}
+          {}
           <Route
             path="/"
             element={!loggedIn ? <Login onLogin={() => setLoggedIn(true)} /> : <Home />}

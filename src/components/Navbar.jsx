@@ -13,8 +13,8 @@ function Navbar() {
       <button 
         className={styles.navItem} 
         onClick={() => {
-          // Cerrar sesión y redirigir a login
-          setLoggedIn(false); // Asegúrate de tener acceso a setLoggedIn aquí
+          
+          setLoggedIn(false); 
         }}
       >
         Cerrar Sesión

@@ -2,8 +2,8 @@ import React from "react";
 
 const Login = ({ onLogin }) => {
   const handleLogin = () => {
-    // Aquí puedes agregar la lógica de autenticación
-    onLogin(); // Llama a la función para cambiar el estado de loggedIn
+    
+    onLogin();
   };
 
   return (
