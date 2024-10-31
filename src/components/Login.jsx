@@ -1,23 +1,17 @@
-import React, { useContext } from 'react';
-import { AppContext } from '../contexts/AppContext';
-import { useNavigate } from 'react-router-dom';
-import styles from '../styles/Login.module.css';
+import React from "react";
 
-const Login = () => {
-    const { setLoggedIn } = useContext(AppContext);
-    const navigate = useNavigate();
+const Login = ({ onLogin }) => {
+  const handleLogin = () => {
+    // Aquí puedes agregar la lógica de autenticación
+    onLogin(); // Llama a la función para cambiar el estado de loggedIn
+  };
 
-    const handleLogin = () => {
-        setLoggedIn(true);
-        navigate('/home');
-    };
-
-    return (
-        <div className={styles.login}>
-            <h1>Iniciar Sesión</h1>
-            <button onClick={handleLogin}>Ingresar</button>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Iniciar Sesión</h1>
+      <button onClick={handleLogin}>Iniciar Sesión</button>
+    </div>
+  );
 };
 
 export default Login;

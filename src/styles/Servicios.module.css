@@ -1,0 +1,19 @@
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 220px;
+  }
+  
+  .servicio {
+    background-color: #ffffff; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Elegante', sans-serif;
+  }
+  
